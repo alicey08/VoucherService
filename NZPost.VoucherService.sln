@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZPost.VoucherService.Admin", "NZPost.VoucherService.Admin\NZPost.VoucherService.Admin.csproj", "{D90AA878-2B60-4E49-A0D6-995ED2CC2B3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZPost.VoucherService.AppServices", "NZPost.VoucherService.AppServices\NZPost.VoucherService.AppServices.csproj", "{4858B3F5-ECA7-4056-99F0-B040EA334CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZPost.VoucherService.CreateDatabase", "NZPost.VoucherService.CreateDatabase\NZPost.VoucherService.CreateDatabase.csproj", "{C726DA6F-01C4-44D3-9FA8-BEFF12CF44B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZPost.VoucherService.EfRepositories", "NZPost.VoucherService.EfRepositories\NZPost.VoucherService.EfRepositories.csproj", "{A99AE451-8807-4279-817A-A9688577F8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZPost.VoucherService.Infrastructure", "NZPost.VoucherService.Infrastructure\NZPost.VoucherService.Infrastructure.csproj", "{A3F54F5C-2B68-4EC4-986C-04848078BB31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NZPost.VoucherService.Model", "NZPost.VoucherService.Model\NZPost.VoucherService.Model.csproj", "{5A3CFEA4-C05A-40C2-9CCD-5E46585B152A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D90AA878-2B60-4E49-A0D6-995ED2CC2B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D90AA878-2B60-4E49-A0D6-995ED2CC2B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D90AA878-2B60-4E49-A0D6-995ED2CC2B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D90AA878-2B60-4E49-A0D6-995ED2CC2B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4858B3F5-ECA7-4056-99F0-B040EA334CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4858B3F5-ECA7-4056-99F0-B040EA334CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4858B3F5-ECA7-4056-99F0-B040EA334CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4858B3F5-ECA7-4056-99F0-B040EA334CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C726DA6F-01C4-44D3-9FA8-BEFF12CF44B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C726DA6F-01C4-44D3-9FA8-BEFF12CF44B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C726DA6F-01C4-44D3-9FA8-BEFF12CF44B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C726DA6F-01C4-44D3-9FA8-BEFF12CF44B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99AE451-8807-4279-817A-A9688577F8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99AE451-8807-4279-817A-A9688577F8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99AE451-8807-4279-817A-A9688577F8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99AE451-8807-4279-817A-A9688577F8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F54F5C-2B68-4EC4-986C-04848078BB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F54F5C-2B68-4EC4-986C-04848078BB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F54F5C-2B68-4EC4-986C-04848078BB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F54F5C-2B68-4EC4-986C-04848078BB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3CFEA4-C05A-40C2-9CCD-5E46585B152A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3CFEA4-C05A-40C2-9CCD-5E46585B152A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3CFEA4-C05A-40C2-9CCD-5E46585B152A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3CFEA4-C05A-40C2-9CCD-5E46585B152A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
