@@ -13,5 +13,7 @@ namespace NZPost.VoucherService.Model
         [StringLength(100)]
         [Required]
         public string UserName { get; set; }
+
+        public List<UserAccess> UserAccesses { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace NZPost.VoucherService.Admin.Controllers
         }
         public ActionResult Index()
         {
-            ViewBag.Message = organisationService.GetAllOrganisations().First().Name;
+           // ViewBag.Message = organisationService.GetAllActiveOrganisations().First().Name;
 
             return View();
         }

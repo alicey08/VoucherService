@@ -1,0 +1,53 @@
+﻿@model NZPost.VoucherService.Admin.ViewModel.BatchViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>BatchViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BatchName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BatchName)
+            @Html.ValidationMessageFor(model => model.BatchName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BatchDesc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BatchDesc)
+            @Html.ValidationMessageFor(model => model.BatchDesc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NoOfVouchers)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NoOfVouchers)
+            @Html.ValidationMessageFor(model => model.NoOfVouchers)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

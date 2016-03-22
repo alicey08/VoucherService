@@ -16,9 +16,25 @@ namespace NZPost.VoucherService.AppServices
             this.uow = uow;
         }
 
-        public List<Organisation> GetAllOrganisations()
+        public List<Organisation> GetAllActiveOrganisations()
+        {
+            return uow.Organisations.Where(o=>o.Active==true).ToList();
+        }
+
+        public List<Organisation> SearchOrganisations(int? organisationId,string accountNumber,string apiKey)
         {
             return uow.Organisations.ToList();
+        }
+
+        public void AddOrganisation(Organisation organisation)
+        {
+            uow.Organisations.Add(organisation);
+            uow.SaveChanges();
+        }
+
+        public void UpdateOrganisation(Organisation organisation)
+        {
+
         }
     }
 }

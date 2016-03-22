@@ -34,7 +34,7 @@ namespace NZPost.VoucherService.EfRepositories
         {
             get { return Set<Access >(); }
         }
-        public IDbSet<Batch> Batchs
+        public IDbSet<Batch> Batches
         {
             get { return Set<Batch>(); }
         }

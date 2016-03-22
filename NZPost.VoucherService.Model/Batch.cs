@@ -29,6 +29,8 @@ namespace NZPost.VoucherService.Model
         [Required]
         public Campaign Campaign { get; set; }
 
+        public virtual List<Voucher> Vouchers { get; set; }
+
        
     }
 }

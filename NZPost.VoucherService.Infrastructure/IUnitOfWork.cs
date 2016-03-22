@@ -12,7 +12,7 @@ namespace NZPost.VoucherService.Infrastructure
         IDbSet<Organisation> Organisations { get; }
         IDbSet<Department> Departments { get; }
         IDbSet<Access> Accesses { get; }
-        IDbSet<Batch> Batchs { get; }
+        IDbSet<Batch> Batches { get; }
         IDbSet<Campaign> Campaigns { get; }
         IDbSet<Status> Statuses { get; }
         IDbSet<User> Users { get; }

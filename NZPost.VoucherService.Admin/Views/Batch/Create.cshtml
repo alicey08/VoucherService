@@ -1,0 +1,71 @@
+﻿@model NZPost.VoucherService.Admin.ViewModel.BatchViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create Batch</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>BatchViewModel</legend>
+        <div class="editor-label">
+            @Html.Label("Organisation")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model=>model.OrganisationIdForSearch,new SelectList(Model.Organisations,"Id","name"),"Please select") 
+            @Html.ValidationMessageFor(model => model.OrganisationIdForSearch)          
+        </div>
+        <div class="editor-label">
+            @Html.Label("Department")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.DepartmentIdForSearch, new SelectList(Model.Departments, "Id", "name"), "Please select")
+            @Html.ValidationMessageFor(model => model.DepartmentIdForSearch)
+        </div>
+        <div class="editor-label">
+            @Html.Label("Campaign")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.CampaignIdForSearch, new SelectList(Model.Campaigns, "Id", "name"), "Please select")
+            @Html.ValidationMessageFor(model => model.CampaignIdForSearch)
+        </div>
+        <div class="editor-label">
+            @Html.Label("Batch Name")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BatchName)
+            @Html.ValidationMessageFor(model => model.BatchName)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Batch Description")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BatchDesc)           
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("Number Of Vouchers")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NoOfVouchers)
+            @Html.ValidationMessageFor(model => model.NoOfVouchers)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
